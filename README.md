@@ -1,3 +1,34 @@
-# ToDo App with CQRS
+# ToDo App with FastAPI & CQRS
 
-This project is only for educational purposes. It is not intended to be used in production.
+This is a simple to-do application built using FastAPI and CQRS architectural pattern. The purpose of this project is purely educational, and it is not intended to be used in production.
+
+## Requirements
+
+- Docker
+- Docker Compose
+
+## Installation
+
+- Clone this repository: `git clone https://github.com/your-username/todo-app-fastapi-cqrs.git`
+- Navigate to the project directory: `cd todo-app-fastapi-cqrs`
+- Build the Docker image: `make build`
+- Run the Docker containers: `make start`
+
+## Usage
+
+By default, when running the `make start` command, the application will be available at `http://localhost:8004`. You 
+can also access the Swagger UI at `http://localhost:8004/docs` and stop the containers by running `make stop`.
+
+## Roadmap
+
+- [ ] Add database migrations
+- [ ] Add logging
+- [ ] Add unit tests
+- [ ] Add integration tests
+- [ ] Add end-to-end tests
+- [ ] Add authentication
+- [ ] Add authorization
+
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
