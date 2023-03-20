@@ -13,8 +13,8 @@ from src.commands.types.update_todo import UpdateTodoCommand
 from src.commands.types.delete_todo import DeleteTodoCommand
 
 # Import the command and query handlers to execute decorators (noqa)
-import src.commands.handlers # noqa
-import src.queries.handlers # noqa
+import src.commands.handlers  # noqa
+import src.queries.handlers  # noqa
 
 from src.queries.types.get_todo import GetTodoQuery
 from src.queries.types.list_todos import ListTodosQuery

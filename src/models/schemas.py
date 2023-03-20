@@ -4,6 +4,8 @@ class TodoBase(BaseModel):
     title: str
     description: str
     completed: bool = False
+    class Config:
+        orm_mode = True
 
 class TodoCreate(TodoBase):
     pass
