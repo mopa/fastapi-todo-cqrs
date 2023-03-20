@@ -9,8 +9,8 @@ This is a simple to-do application built using FastAPI and CQRS architectural pa
 
 ## Installation
 
-- Clone this repository: `git clone https://github.com/your-username/todo-app-fastapi-cqrs.git`
-- Navigate to the project directory: `cd todo-app-fastapi-cqrs`
+- Clone this repository: `git clone https://github.com/mopa/fastapi-todo-cqrs.git`
+- Navigate to the project directory: `cd fastapi-todo-cqrs`
 - Build the Docker image: `make build`
 - Run the Docker containers: `make start`
 
