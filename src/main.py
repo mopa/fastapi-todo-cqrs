@@ -19,7 +19,14 @@ import src.queries.handlers  # noqa
 from src.queries.types.get_todo import GetTodoQuery
 from src.queries.types.list_todos import ListTodosQuery
 
+import logging
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger("uvicorn")
+logger.info("**Starting FastAPI Todo CQRS application**")
+
 app = FastAPI()
+logger.info("*Application startup*")
 
 
 @app.post("/todos/")

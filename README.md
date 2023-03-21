@@ -28,7 +28,10 @@ can also access the Swagger UI at `http://localhost:8004/docs` and stop the cont
 
 - [x] Add database migrations
 - [x] `.env` file support
-- [ ] Add logging
+- [x] Add logging
+- [ ] Separate in bounded contexts
+- [ ] Separate by layers
+- [ ] Add scripts for linting, formatting and sort imports
 - [ ] Add unit tests
 - [ ] Add integration tests
 - [ ] Add end-to-end tests
