@@ -1,6 +1,6 @@
 services:
-  pythondev:
-    image: pythondev:latest
+  todocqrs:
+    image: todocqrs:latest
     container_name: todocqrs
     volumes:
       - ./:/app

@@ -9,7 +9,7 @@ help:
 .SILENT:
 
 build: ## Build all containers
-	docker build -t pythondev:latest .
+	docker build -t todocqrs:latest .
 
 start: ## Up ALL workspace and Pycharm
 	docker-compose up -d

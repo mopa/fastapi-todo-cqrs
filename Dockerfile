@@ -4,7 +4,7 @@ FROM python:3.11-slim as base
 ENV PIP_DEFAULT_TIMEOUT=100 \
     PYTHONUNBUFFERED=1 \
     PIP_DISABLE_PIP_VERSION_CHECK=1 \
-    PIP_NO_CACHE_DIR=1 
+    PIP_NO_CACHE_DIR=1
 
 WORKDIR /app
 COPY pyproject.toml ./
@@ -35,6 +35,6 @@ RUN set -ex \
     && rm -rf /var/lib/apt/lists/*
 
 
-CMD ["uvicorn", "src.main:app", "--reload", "--workers", "1", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["uvicorn", "main:app", "--reload", "--workers", "1", "--host", "0.0.0.0", "--port", "8000"]
 
 USER worker
