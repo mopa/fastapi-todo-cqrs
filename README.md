@@ -13,6 +13,11 @@ This is a simple to-do application built using FastAPI and CQRS architectural pa
 - Navigate to the project directory: `cd fastapi-todo-cqrs`
 - Build the Docker image: `make build`
 - Run the Docker containers: `make start`
+- Duplicate the `.env.example` to `.env` file and modify it with the data connection to your PostgreSQL database
+- Run the first migration: `docker-compose run pythondev alembic upgrade head`
+    - Other option is enter the docker container and run the command:
+    - `docker exec -it todocqrs /bin/bash`
+    - `alembic upgrade head`
 
 ## Usage
 
@@ -21,9 +26,9 @@ can also access the Swagger UI at `http://localhost:8004/docs` and stop the cont
 
 ## Roadmap
 
-- [ ] Add database migrations
+- [x] Add database migrations
+- [x] `.env` file support
 - [ ] Add logging
-- [ ] `.env` file support
 - [ ] Add unit tests
 - [ ] Add integration tests
 - [ ] Add end-to-end tests
